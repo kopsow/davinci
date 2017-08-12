@@ -1,0 +1,46 @@
+div.wycena {
+    input[type="radio"] {
+    width: 150px;
+    display: block;
+    margin-bottom: 10px;
+    background-color: yellow;
+}
+.input-group {
+    padding-top:1.65em;
+    padding-bottom: 2.65em;
+    width:100%;
+    
+    label {
+        display:block;
+        
+        span {
+           
+        }
+    }
+    input {
+       color:green;
+       box-sizing : border-box;
+       text-align: center;
+       display:block !important;
+       width:100% !important;
+    }
+    
+    
+}
+
+    .col-md-8, .col-md-4 {
+    
+    h1 {
+        text-align: center;
+    }
+    img {
+        display: block;
+        text-align:center;
+        margin:0px auto;
+        width:32px;
+        height: 32px;
+    }
+}
+
+
+}

@@ -1,0 +1,220 @@
+
+<?
+ $this->HeadScript()->appendFile('https://www.google.com/recaptcha/api.js');
+
+?>
+
+<div class="row">
+   
+    <div class="col-md-6"> 
+        <h1><a name="top"></a>Skontaktuj się z nami</h1>
+               <?       
+                echo $this->form()->openTag($form);
+                echo $this->formInput($form->get('imie_nazwisko'));
+                echo $this->formInput($form->get('email'));
+                echo $this->formInput($form->get('phone'));
+                echo $this->formTextArea($form->get('message'));
+                echo $this->formInput($form->get('submit'));
+               ?>
+                
+
+    </div>
+    <div class=" col-md-6">
+         <h1>Kontakt</h1>
+         <p>
+             <span>Da Vinci Team Sp. z o.o</span>
+             <span>ul. Fliegera 14</span>
+             <span>40-060 Katowice</span>
+         </p>
+         <p>
+            <span>
+                <strong>E-mail:</strong>
+            </span>
+            <span>
+                <a href="mailto:biuro@davinci-team.pl">biuro@davinci-team.pl</a>
+            </span>
+         </p>
+         
+         <p>
+            <span>
+                <strong>Telefon 1:</strong>
+            </span>
+            <span>
+                <a href="tel:327390081">+48 (32) 739-00-81</a>
+            </span>
+         </p>
+         
+         <p>
+            <span>
+                <strong>Telefon 2:</strong>
+            </span>
+            <span>
+                <a href="tel:327390481">+48 (32) 739-04-81</a>
+            </span>
+         </p>
+         
+         <p>
+            <span>
+                <strong>Fax:</strong>
+            </span>
+            <span>
+                <a href="tel:327390082">+48 (32) 32 739-00-82</a>
+            </span>
+         </p>
+         
+          <p>
+            <span>
+                <strong>Księgowość:</strong>
+            </span>
+            <span>
+                <a href="tel:327390084">+48 (32) 739-00-84</a>
+            </span>
+         </p>
+         
+         
+    </div>
+    <!--<div class="g-recaptcha" data-sitekey="6LfblyoUAAAAALTHkvj8yTfiuFN9Z3f9cEstGQwm"></div>-->
+    
+</div>
+<div class="row" style="background-color: #ffffff !important;">
+    <div class="col-sm-12 hidden-md hidden-lg">
+        
+        <a href="<?echo $this->basePath('kontakt#katowice')?>">Oddział Katowice</a>
+        <a href="<?echo $this->basePath('kontakt#torun')?>">Oddział Toruń</a>
+        <a href="<?echo $this->basePath('kontakt#ksiegowosc')?>">Księgowość</a>
+    </div>
+    <div class="col-md-4">
+        <h1><a name="katowice"></a>Katowice<a href="<?echo $this->basePath('kontakt#top')?>"><img src="<?echo $this->basePath('/img/icon/list.png')?>" style="width:32px;height: 32px;"></a></h1>
+        <div class="panel panel-default">
+            <div class="panel-heading">Jakub Wąsik</div>
+            <div class="panel-body">
+               <span><a href="mailto:jakub@davinci-team.pl">jakub@davinci-team.pl</a></span>
+            <span><a href="tel:+4832693 999 688">+48 693-999-688</a></span>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">Katarzyna Jurczak</div>
+            <div class="panel-body">
+               <span><a href="mailto:kasia@davinci-team.pl">kasia@davinci-team.pl</a></span>
+            <span><a href="tel:+4832693 999 688">+48 693-999-688</a></span>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">Monika Świętochowska</div>
+            <div class="panel-body">
+               <span><a href="mailto:monika@davinci-team.pl">monika@davinci-team.pl</a></span>
+            <span><a href="tel:+4832693 999 688">+48 693-999-688</a></span>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">Ewelina Puchała</div>
+            <div class="panel-body">
+               <span><a href="mailto:ewelina@davinci-team.pl">ewelina@davinci-team.pl</a></span>
+            <span><a href="tel:+4832693 999 688">+48 693-999-688</a></span>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">Patrycja Janusek</div>
+            <div class="panel-body">
+               <span><a href="mailto:patrycja@davinci-team.pl">patrycja@davinci-team.pl</a></span>
+            <span><a href="tel:+4832693 999 688">+48 693-999-688</a></span>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <h1><a name="torun"></a>Toruń<a href="<?echo $this->basePath('kontakt#top')?>"><img src="<?echo $this->basePath('/img/icon/list.png')?>" style="width:32px;height: 32px;"></a></h1>
+        <div class="panel panel-default">
+            <div class="panel-heading">Małgorzata Kwiatkowska-Szargiej</div>
+            <div class="panel-body">
+               <span><a href="mailto:gosia@davinci-team.pl">gosia@davinci-team.pl</a></span>
+            <span><a href="tel:+4832693 999 688">+48 693-999-688</a></span>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">Michał Cieczko</div>
+            <div class="panel-body">
+               <span><a href="mailto:michal.cieczko@davinci-team.pl">michal.cieczko@davinci-team.pl</a></span>
+            <span><a href="tel:+4832693 999 688">+48 693-999-688</a></span>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">Wioleta Graczyk</div>
+            <div class="panel-body">
+                <span><a href="mailto:wioleta@davinci-team.pl">wioleta@davinci-team.pl</a></span>
+                <span><a href="tel:+4832693 999 688">+48 693-999-688</a></span>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <h1><a name="ksiegowosc"></a><?echo $this->translate('Home')?><a href="<?echo $this->basePath('kontakt#top')?>"><img src="<?echo $this->basePath('/img/icon/list.png')?>" style="width:32px;height: 32px;"></a></h1>
+        <div class="panel panel-default">
+            <div class="panel-heading">Dorota Marecka</div>
+            <div class="panel-body">
+                <span><a href="mailto:jakub@davinci-team.pl">dorota@davinci-team.pl</a></span>
+                <span><a href="mailto:jakub@davinci-team.pl">ksiegowosc@davinci-team.pl</a></span>
+                <span><a href="tel:+4832693 999 688">+48 693-999-688</a></span>
+            </div>
+        </div>
+    </div>
+        
+</div>
+<style>
+   
+    input:not([type="submit"]) {
+        background-color: #F2F2F2 !important;
+        padding: 25px !important;
+        border-radius: 0px !important;
+        border:none !important;
+        margin-bottom: 1em;
+    }
+    input[type="text"]:first-of-type {
+        display: inline-block;
+        width:45% !important;
+        
+    }
+    input[type="email"] {
+        float: right;
+        display: inline-block;
+        width:50% !important;
+    }
+    
+    input[type="submit"] {
+        width:50% !important;
+        display: block !important;
+       
+        margin:0px auto !important;
+        background-color:  #49535B !important;
+        color:#F2F2F2 !important;
+    }
+    textarea {
+        background-color: #F2F2F2 !important;
+        clear: right;
+        display: block;
+        width: 100% !important;
+        margin-bottom: 1em;
+        color: #49535B !important;
+        
+    }
+    
+    h1 + p:first-of-type {
+        text-align: center !important;
+        
+    }
+    h1 + p:first-of-type span {
+        display: block;
+        font-weight: bolder;
+        font-size: 1.25em;
+    }
+    
+    @media screen and (max-width: 480px) {
+        
+        input[type="text"]:first-of-type {
+        display: block;  
+        width: 100% !important;
+        }
+        input[type="email"] {        
+        display: block;
+        width:100% !important;
+    }
+    }
+</style>

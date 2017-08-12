@@ -1,0 +1,170 @@
+@import "nav";
+@import "icon";
+@import "section";
+@import 'form';
+body {
+    overflow-x: hidden;
+}
+.parallax-image-1 {
+
+  margin:0;
+  height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("http://davinci.katowice.pl/img/top.jpg");
+
+  h1 {
+    text-align: center;
+    color:#fff;
+    font-weight: bolder;
+    padding-top: 9%;
+  }
+}
+.parallax-image-2 {
+
+  margin:0;
+  height: 600px;
+  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("http://davinci.katowice.pl/img/bottom.jpg");
+
+  h1 {
+    text-align: center;
+    color:#fff;
+    font-weight: bolder;
+    padding-top: 9%;
+  }
+}
+section {
+  img {
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    margin: 0 auto;
+    width: 25%;
+  }
+  h1 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;;
+  }
+}
+.padding-1 {
+  
+  padding-left: 8%;
+  
+}
+.padding-2 {
+  padding-left: 8%;
+  padding-right: 8%;
+  
+}
+
+.row  {
+
+  .col-md-6  {
+
+    h2 {
+      color:#fff;
+
+    }
+    ul {
+      color:#fff;
+
+      list-style-type: none;
+      li {
+        color:#fff;
+
+      }
+    }
+  }
+
+  &:nth-child(2)
+  {
+    background-color: #2C2C2C;
+  }
+
+  div {
+    &:first-of-type {
+      //border:1px solid blue;
+    }
+
+    &:last-of-type {
+      //border:1px solid orange;
+    }
+  }
+}
+
+.blue {
+  background-color: #49535B;
+  h1 {
+    text-align: center;
+    color:#fff;
+
+  }
+  img {
+    display: block;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin:0 auto;
+
+  }
+
+}
+.white {
+  background-color: #F2EDF0;
+  h1 {
+    text-align: center;
+    color:#000;
+
+  }
+  img {
+    display: block;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin:0 auto;
+
+  }
+
+}
+.blue  .col-md-3 {
+  text-align: center;
+  color:#fff;
+  font-weight: bold;
+  font-size: large;
+}
+
+.kontakt {
+  background-color: #48A4C6;
+  padding: 2em;
+
+}
+
+
+.contact-box {
+    border-radius: 5px;
+
+    border:5px solid #194B91;
+    a {
+        display: block;
+        
+        text-align: center;
+    }
+    img {
+       
+        max-width: 100%;
+        margin:0 auto;
+        text-align: center;
+    }
+    h2 {
+        text-align: center;
+    }
+    
+}

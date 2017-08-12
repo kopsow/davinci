@@ -1,0 +1,15 @@
+.icon li img {
+  width: 64px;
+  height: auto; }
+
+.icon {
+  padding-bottom: 20px; }
+  .icon li > a {
+    color: #fff; }
+    .icon li > a:hover {
+      text-decoration: underline; }
+
+.icon div img {
+  width: 176px; }
+
+/*# sourceMappingURL=icon.css.map */

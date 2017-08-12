@@ -1,0 +1,19 @@
+.icon li img {
+    width: 64px;
+    height: auto;
+}
+.icon {
+    padding-bottom: 20px;
+    
+    li>a {
+        color: #fff;
+        
+        &:hover {
+            text-decoration: underline;
+            
+        }
+    }
+}
+.icon div img {
+    width:176px;
+}

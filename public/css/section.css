@@ -1,0 +1,15 @@
+section.dokumenty-firmy div img {
+  width: 128px !important; }
+section.dokumenty-firmy div h1 {
+  text-align: center !important; }
+section.dokumenty-firmy div a {
+  text-decoration: none; }
+
+div.kontakt .thumbnail img {
+  border-radius: 5px; }
+div.kontakt .caption h3 {
+  font-weight: 800; }
+div.kontakt .caption p {
+  text-align: justify; }
+
+/*# sourceMappingURL=section.css.map */

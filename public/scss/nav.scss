@@ -1,0 +1,31 @@
+.navbar {
+  margin-bottom: 0 !important;
+  border-radius: 0 !important;
+}
+
+//kolor wybranego linku (aktywnego)
+.navbar-default .navbar-nav>.active>a {
+  background-color: #222222 !important; 
+  color:#A7723E;
+  
+  
+  &:hover {
+      color:#A7723E;
+      font-size: 1em;
+      text-decoration: underline;
+  }
+
+}
+
+//Kolor linku po najcheaniu myszką
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    
+    color: #D8B892;
+}
+.navbar-default .navbar-nav > li > a {
+    text-transform: uppercase;
+}
+.container-fluid {
+  height: 100%;
+  //padding: 10px;
+}

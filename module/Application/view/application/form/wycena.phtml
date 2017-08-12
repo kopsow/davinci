@@ -1,0 +1,115 @@
+<div class="row wycena">
+    <?                echo $this->form()->openTag($form); ?>
+    <div class="col-md-4 col-md-offset-2" >
+        <h1>Dane załadunku</h1>
+        <img src="<? echo $this->basePath('img/icon/download.png')?>" alt="ikona zaladunku">
+        <div class="input-group">                 
+               <? 
+                echo $this->formRow($form->get('data_zaladunku'));
+                echo $this->formRow($form->get('kod_pocztowy_zaladunku'));
+                echo $this->formRow($form->get('miejscowosc_zaladunku'));
+                echo $this->formRow($form->get('kraj_zaladunku'));
+               ?>
+                
+        </div>
+    </div>
+    <div class="col-md-4">
+        <h1>Dane rozładunku</h1>
+        <img src="<? echo $this->basePath('img/icon/upload.png')?>" alt="ikona rozladunku">
+        <div class="input-group">            
+               <? 
+                echo $this->formRow($form->get('data_rozladunku'));
+                echo $this->formRow($form->get('kod_pocztowy_rozladunku'));
+                echo $this->formRow($form->get('miejscowosc_rozladunku'));
+                echo $this->formRow($form->get('kraj_rozladunku'));
+               ?>
+                
+        </div>
+    </div>
+    <div class="col-md-8 col-md-offset-2" >
+        
+        <h1>DANE ŁADUNKU</h1>
+        <img src="<? echo $this->basePath('img/icon/package.png')?>" alt="ikona ladunku">
+        <div class="input-group">
+            <?
+                echo $this->formRow($form->get('waga'));
+                echo $this->formRow($form->get('wymiary'));
+                echo $this->formRow($form->get('sposob_zaladunku'));
+                echo $this->formRow($form->get('sposob_pakowania'));
+                echo $this->formRow($form->get('tabor'));                
+                echo $this->formRow($form->get('odpad'));
+                echo $this->formRow($form->get('kod_odpadu'));
+                echo $this->formRow($form->get('adr'));
+                if ($form->get('adr')->getValue() == '0')
+                {   
+                    echo $this->formRow($form->get('klasyfikacja_adr')->setOptions(array(
+                        'label_attributes' => array('class' => '','id'=>'adr'
+                            ))
+                            
+                            ));
+                } else {
+                    echo $this->formRow($form->get('klasyfikacja_adr'));
+                }
+                
+                
+            ?>
+        </div>
+    </div>
+    <div class="col-md-8 col-md-offset-2" >
+        
+        <h1>DANE KONTAKTOWE</h1>
+        <img src="<? echo $this->basePath('img/icon/group-1.png')?>" alt="ikona kontaktu">
+        <div class="input-group">
+            <?
+                echo $this->formRow($form_contact->get('nazwa_firmy'));
+                echo $this->formRow($form_contact->get('imie_nazwisko'));
+                echo $this->formRow($form_contact->get('email'));
+                echo $this->formRow($form_contact->get('phone'));
+                echo $this->formRow($form->get('submit'));
+            ?>
+        </div>
+    </div>
+    <? echo $this->form()->closeTag($form); ?>
+</div>
+<div class="row"></div>
+<script>
+    
+    
+$(document).ready(function(){
+    
+    
+   $('select').change(function(){
+      name = $(this).attr('name');
+      value = $(this).find(":selected").val();
+      if (value === '0')
+      {
+          console.log('dziala switch');
+          console.log(name);
+          switch(name)
+          {
+              case 'odpad':                  
+                  $('#kod_odpadu').removeClass();
+                  $('#kod_odpadu input').prop('required',true);                  
+                  break;
+              case 'adr':                  
+                  $('#adr').removeClass();
+                  $('#adr').prop('required',true);                  
+                  break;
+          }
+      } else if(value === '1') {
+          console.log('wybrano NIE');
+          switch(name)
+          {
+              case 'odpad':
+                  $('#kod_odpadu').addClass('hidden');
+                  $('#kod_odpadu input').prop('required',false);                  
+                  break;
+              case 'adr':
+                  $('#adr').addClass('hidden');
+                  $('#adr').prop('required',false); 
+                  break;
+          }
+      }
+   });
+});
+</script>

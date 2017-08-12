@@ -1,0 +1,121 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" >
+        <?php echo $this->headTitle('Davinci Team - bo tranposrt to sztuka')?>
+
+        <?php echo $this->headMeta()
+            ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+            ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+        ?>
+
+        <!-- Le styles -->
+        <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
+                        ->prependStylesheet($this->basePath('css/style.css'))
+                        
+                        
+                         ?>
+
+        <!-- Scripts -->
+        <?php echo $this->headScript()
+            ->prependFile($this->basePath('js/bootstrap.min.js'))
+            ->prependFile($this->basePath('js/jquery.min.js'))
+            ->prependFile($this->basePath('js/respond.min.js'), 'text/javascript', array('conditional' => 'lt IE 9',))
+            ->prependFile($this->basePath('js/html5shiv.min.js'),   'text/javascript', array('conditional' => 'lt IE 9',))
+        ; ?>
+
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-inverse" role="navigation">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    </button>
+
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav navbar-right">
+    <li class="active"><a href="/"><?echo $this->translate('Home')?><span class="sr-only">(current)</span></a></li>
+    <li><a href="/o-nas" accesskey="2">O NAS</a></li>
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">NASZA OFERTA <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#wariant-1">Spedycja drogowa</a></li>
+          <li><a href="#wariant-2">Transport częściowy i drobnicowy</a></li>
+          <li><a href="#wariant-3">Transport  całopojazdowy neutralny i specjalistyczny</a></li>
+        </ul>
+    </li>
+    <li class="dropdown">
+        <a href="<? echo $this->basePath('strefa-klienta') ?>" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">STREFA KLIENTA<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="<? echo $this->basePath('strefa-klienta/formularz-wyceny') ?>">FORMULARZ WYCENY</a></li>
+          <li><a href="<? echo $this->basePath('strefa-klienta/formularz-zlecenia') ?>">FORMULARZ ZLECENIA</a></li>
+        </ul>
+    </li>
+    <li><a href="/kontakt" accesskey="3">KONTAKT</a></li>
+    <li><a href="/dzialalnosc-charytatywna" accesskey="3">DaVinci Team Charytatywnie</a></li>
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><? echo $this->translate('Choose language')?> <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="<? echo $this->basePath('/pl')?>">POLSKI</a></li>
+          <li><a href="<? echo $this->basePath('/en')?>">ANGIELSKI</a></li>
+          <li><a href="<? echo $this->basePath('/de')?>">NIEMIECKI</a></li>
+          <li><a href="<? echo $this->basePath('/cz')?>">CZESKI</a></li>
+        </ul>
+      </li></ul>
+
+    </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+    </nav>
+        
+        <div class="container">
+            
+    
+            
+       <?php echo $this->content; ?>      
+        
+        
+        
+        <div class="row blue icon ">
+        <h1>Nasze wartości</h1>
+            <div class="col-md-3 col-xs-12 col-sm-6">
+                <a href="<?= $this->url('wartosci',array('param'=>'elastyczni-pracownicy'),array('fragment'=>'top')) ?>"><img src="<?php echo $this->basePath('img/icon/user-17.png')?>" alt="icon" /></a>
+              <strong>Elastyczni Pracownicy</strong>
+            </div>
+            <div class="col-md-3 col-xs-12 col-sm-6">
+                <a href="<?= $this->url('wartosci',array('param'=>'pasja'),array('fragment'=>'top')); ?>"><img src="<?php echo $this->basePath('img/icon/settings-3.png')?>" alt="icon" /></a>
+              <strong>Pasja</strong>
+            </div>
+            <div class="col-md-3 col-xs-12 col-sm-6">
+                <a href="<?= $this->url('wartosci',array('param'=>'uczciwa-wspolpraca'),array('fragment'=>'top')) ?>"><img src="<?php echo $this->basePath('img/icon/handshake.png')?>" alt="icon" /></a>
+              <strong>Uczciwa współpraca</strong>
+            </div>
+            <div class="col-md-3 col-xs-12 col-sm-6">
+                <a href="<?= $this->url('wartosci',array('param'=>'innowacyjnosc'),array('fragment'=>'top')) ?>"><img src="<?php echo $this->basePath('img/icon/startup.png')?>" alt="icon" /></a>
+              <strong>Innowacyjność</strong>
+            </div>
+    </div>
+         
+        <div class="row white padding-2">
+            <h1>Zapytaj o wycenę transportu!</h1>
+            <div class="contact-box">
+                 <h2>Zapraszamy do kontaktu, odpowiemy na wszelkie pytania.</h2>
+                 <a href="<?php echo $this->basePath('/kontakt')?>"><img src="<?php echo $this->basePath('img/icon/user-16.png')?>" alt="ikona kontakt"></a>
+
+            </div>
+    </div>
+    </div>
+        <section class="parallax-image-2 hidden-xs" ></section>
+        <?php echo $this->inlineScript() ?>
+    </body>
+</html>

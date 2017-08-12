@@ -1,0 +1,37 @@
+section.dokumenty-firmy {
+   
+    div {
+        
+       
+        img {            
+            width:128px !important;
+        }
+        h1 {
+           
+           text-align: center !important;
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+    
+}
+
+//SEKCJA KONTAKT
+
+div.kontakt {
+    .thumbnail {
+        img {
+            border-radius: 5px;
+        }
+    }
+    
+    .caption {
+        h3 {
+            font-weight: 800;
+        }
+        p {
+            text-align: justify;
+        }
+    }
+}

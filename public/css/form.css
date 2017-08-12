@@ -1,0 +1,27 @@
+div.wycena input[type="radio"] {
+  width: 150px;
+  display: block;
+  margin-bottom: 10px;
+  background-color: yellow; }
+div.wycena .input-group {
+  padding-top: 1.65em;
+  padding-bottom: 2.65em;
+  width: 100%; }
+  div.wycena .input-group label {
+    display: block; }
+  div.wycena .input-group input {
+    color: green;
+    box-sizing: border-box;
+    text-align: center;
+    display: block !important;
+    width: 100% !important; }
+div.wycena .col-md-8 h1, div.wycena .col-md-4 h1 {
+  text-align: center; }
+div.wycena .col-md-8 img, div.wycena .col-md-4 img {
+  display: block;
+  text-align: center;
+  margin: 0px auto;
+  width: 32px;
+  height: 32px; }
+
+/*# sourceMappingURL=form.css.map */

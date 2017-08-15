@@ -21,11 +21,11 @@ return array(
     ),
     'mail' => array(
     'transport' => array(
-        'name'              => 'SuperMed',
-            'host'              => 's44.linuxpl.com',
+        'name'              => 'DaVinci',
+            'host'              => 'davinci-team.pl',
             'connection_class'  => 'login',
             'connection_config' => array(
-                'username' => 'rejestracja@super-med.pl',
+                'username' => 'www@davinci-team.pl',
                 'password' => 'AoT7kIhf',
             ),
     ),
